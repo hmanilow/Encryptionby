@@ -29,4 +29,12 @@ int main()
             textupd += tolower(a);
         }
     }
+    string key_key = "";
+    for (char a : key)
+    {
+        if (key_key.find(tolower(a)) == string::npos && alph.find(tolower(a)) != string::npos)
+        {
+            key_key += tolower(a);
+        }
+    }
 }
