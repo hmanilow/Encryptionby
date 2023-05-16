@@ -55,4 +55,8 @@ int main()
             iter++;
         }
     }
+    
+    cout << "Зашифровка: " << cryptage << endl;
+    
+    
 }
