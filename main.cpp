@@ -58,5 +58,19 @@ int main()
     
     cout << "Зашифровка: " << cryptage << endl;
     
+    for (char a : cryptage)
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < 6; j++)
+            {
+                if (polybius_square[i][j].find(a) != string::npos) // если символ есть в квадрате Полибия
+                {
+                    cryptocode += to_string(i) + to_string(j); // + номер строки и столбца в код
+                }
+            }
+        }
+    }
+    
     
 }
