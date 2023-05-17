@@ -77,5 +77,5 @@ int main()
         decrypted_text += polybius_square[cryptocode[i] - '0'][cryptocode[i + cryptocode.length() / 2] - '0'];
     }
     cout << "\nРасшифровка: " << decrypted_text << endl;
-  
+    return 0;
 }
